@@ -85,8 +85,6 @@ Object.entries(theme.colors).forEach(([colorName, nuances]) => {
   });
 });
 
-console.log(theme);
-
 module.exports = {
   content: ["./app/**/*.{js,ts,jsx,tsx}", "./ui/**/*.{js,ts,jsx,tsx}"],
   theme: theme,
