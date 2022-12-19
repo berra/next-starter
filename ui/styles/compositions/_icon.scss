@@ -1,0 +1,16 @@
+/* COMPONENT: ICON */
+
+.icon {
+  width: 1em;
+  width: 1cap;
+  height: 1em;
+  height: 1cap;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.with-icon {
+  gap: var(--space, 1ch);
+  display: inline-flex;
+  align-items: center;
+}

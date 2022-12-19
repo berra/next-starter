@@ -1,0 +1,21 @@
+.chips {
+  --space: 0.8ch;
+}
+
+.chips > * {
+  background-color: var(--chip-background-color, #eee);
+  border-radius: var(--chip-border-radius, var(--s-100, 0));
+  color: var(--chip-text-color, inherit);
+  font-size: var(--chip-font-size, var(--fs-200, 1rem));
+  padding-inline: var(--chip-padding-inline, var(--s-100, 0));
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+@media (prefers-color-scheme: dark) {
+  .chips > * {
+    background-color: var(--color-dark);
+    border: 1px solid currentColor;
+  }
+}

@@ -1,0 +1,13 @@
+/* COMPONENT: CLUSTER */
+
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space, var(--s-100, 1rem));
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cluster[data-push-last-item] > :last-child {
+  margin-inline-start: auto;
+}

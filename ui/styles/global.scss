@@ -1,0 +1,53 @@
+@tailwind base;
+
+@import "functions";
+@import "variables";
+@import "reset";
+@import "compositions";
+@import "blocks";
+@import "utilities";
+
+:root {
+  color-scheme: dark light;
+}
+
+:is(html, body, div, header, nav, main, footer) {
+  max-inline-size: none;
+}
+
+* {
+  max-inline-size: theme("spacing.measure");
+  font-family: theme("fontFamily.sans");
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: theme("fontSize.fs-300");
+  display: flex;
+  flex-direction: column;
+}
+
+body > header,
+body > footer {
+  flex-grow: 0;
+}
+
+body > main {
+  flex-grow: 1;
+}
+
+a {
+  color: inherit;
+}
+
+*:focus-visible {
+  outline-width: 1px;
+  outline-offset: 2px;
+  outline-color: currentColor;
+  outline-style: dotted;
+}
+
+@tailwind utilities;

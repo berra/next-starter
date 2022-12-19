@@ -1,0 +1,27 @@
+/* COMPONENT: STACK */
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stack > * {
+  margin-block: 0;
+}
+
+.stack > * + * {
+  margin-block-start: var(--space, var(--s-300, 1rem));
+}
+
+.stack[data-version="split"]:only-child {
+  block-size: 100%;
+}
+
+.stack[data-version="split"] > :nth-child(3) {
+  margin-block-end: auto;
+}
+
+.stack[data-push-last-item] > :nth-last-child(2) {
+  margin-block-end: auto;
+}

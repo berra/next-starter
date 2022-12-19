@@ -1,0 +1,16 @@
+/* COMPONENT: GRID */
+
+.grid {
+  display: grid;
+  grid-gap: var(--space, var(--s0, 1rem));
+}
+
+@supports (width: min(250px, 100%)) {
+  .grid {
+    --grid-min-size: 250px;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(min(var(--grid-min-size), 100%), 1fr)
+    );
+  }
+}

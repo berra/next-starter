@@ -1,0 +1,11 @@
+/* CONTAINER */
+
+.container {
+  max-inline-size: var(--container);
+  padding-inline: var(--gutter, var(--s-300, 0));
+  margin-inline: auto;
+}
+
+.container[data-format="narrow"] {
+  max-inline-size: 40rem;
+}

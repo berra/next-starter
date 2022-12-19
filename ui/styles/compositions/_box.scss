@@ -1,0 +1,30 @@
+/* COMPONENT: BOX */
+
+.box {
+  padding: var(--space, var(--s-100, 0));
+  border: var(--border-thin) solid;
+  --color-light: #eee;
+  --color-dark: #222;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+}
+
+.box * {
+  color: inherit;
+}
+
+.box.invert {
+  color: var(--color-light);
+  background-color: var(--color-dark);
+}
+
+@media (prefers-color-scheme: dark) {
+  .box {
+    color: var(--color-light);
+    background-color: var(--color-dark);
+  }
+  .box.invert {
+    color: var(--color-dark);
+    background-color: var(--color-light);
+  }
+}

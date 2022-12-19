@@ -1,0 +1,8 @@
+.header {
+  background-color: var(--background-color);
+  margin-block-end: var(--s-100);
+  outline: var(--border-thick) solid rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}

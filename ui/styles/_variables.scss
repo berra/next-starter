@@ -1,0 +1,26 @@
+:root {
+  --background-color: Canvas;
+  --text-color: CanvasText;
+
+  --measure: theme(spacing.measure);
+
+  --s-100: theme(spacing.100);
+  --s-200: theme(spacing.200);
+  --s-300: theme(spacing.300);
+  --s-400: theme(spacing.400);
+  --s-500: theme(spacing.500);
+  --s-600: theme(spacing.600);
+  --s-700: theme(spacing.700);
+  --s-800: theme(spacing.800);
+  --s-900: theme(spacing.900);
+
+  --fs-100: theme(fontSize.100);
+  --fs-200: theme(fontSize.200);
+  --fs-300: theme(fontSize.300);
+  --fs-400: theme(fontSize.400);
+  --fs-500: theme(fontSize.500);
+  --fs-600: theme(fontSize.600);
+  --fs-700: theme(fontSize.700);
+  --fs-800: theme(fontSize.800);
+  --fs-900: theme(fontSize.900);
+}

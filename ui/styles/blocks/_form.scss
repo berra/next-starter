@@ -1,0 +1,68 @@
+.input-group {
+  gap: 0.2em;
+}
+
+form[class^="form"] input {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding-inline: 0.3em;
+}
+
+form[class^="form"] label {
+  // font-size: var(--fs-200);
+}
+
+.form-horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space, var(--s1, 1rem));
+}
+
+.form-horizontal .input-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.form-horizontal .input-group > label {
+  margin-inline-end: var(--space, var(--s0, 1ch));
+}
+
+.form-vertical .input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.form-search {
+  --inline-padding: 2px;
+  gap: 0;
+  align-items: stretch;
+}
+
+.form-search input {
+  padding-inline-start: var(--inline-padding);
+}
+
+.form-search [type="submit"] {
+  background-color: field;
+  padding-inline: var(--inline-padding);
+}
+
+input:where([type="search"], [type="email"], [type="password"], [type="text"]) {
+  appearance: textfield;
+  font: inherit;
+  font-size: inherit;
+}
+
+input[type="search"] {
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    appearance: none;
+  }
+}
