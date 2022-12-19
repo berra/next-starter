@@ -64,10 +64,12 @@ const theme = {
       3: "#FEFCFA",
     },
   },
-  extend: {
-    spacing: {
-      measure: "60ch",
-    },
+  extend: {},
+};
+
+theme.extend = {
+  spacing: {
+    measure: "60ch",
   },
 };
 

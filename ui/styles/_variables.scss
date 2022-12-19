@@ -2,7 +2,11 @@
   --background-color: Canvas;
   --text-color: CanvasText;
 
+  --border-thin: theme(borderWidth.DEFAULT);
+  --border-thick: theme(borderWidth.4);
+
   --measure: theme(spacing.measure);
+  --gutter: theme(spacing.200);
 
   --s-100: theme(spacing.100);
   --s-200: theme(spacing.200);

@@ -45,7 +45,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
         <main id="main">{children}</main>
 
-        <footer className="p">Footer </footer>
+        <footer className="p-200 mt-900 border-t-thick">
+          <p>Footer &copy; 2022</p>
+        </footer>
       </body>
     </html>
   );
